@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlsaMaskTree/R2020a">
+  <slsa.mm.maskTree.MaskTree type="slsa.mm.maskTree.MaskTree" uuid="119e44de-287a-43ab-9836-4c3938f1ffd9">
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="8295aab2-127a-4417-af36-0394cb25b1cf">
+      <blockPath>Pur_Pursuit/Bicycle Kinematic Model</blockPath>
+      <childrenIds>Pur_Pursuit:64:95</childrenIds>
+      <id>Pur_Pursuit:64</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="056ae9ba-5bbf-479d-af97-0b7c2d2b8944">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e9c23e6d-1a2d-4f99-b420-6c9f1ad5cbd1">
+          <expression>Vehicle Speed &amp; Steering Angle</expression>
+          <name>VehicleInputs</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c5d604a7-4dee-419f-bd8f-e5b6106747a4">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <isTunable>true</isTunable>
+          <name>WheelBase</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="dc415e85-93be-40ad-8e5d-9844f01d44a7">
+          <evaluate>true</evaluate>
+          <expression>[-inf inf]</expression>
+          <isTunable>true</isTunable>
+          <name>VehicleSpeedRange</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c9cafb05-0c6d-41cc-a778-d318098df1ce">
+          <evaluate>true</evaluate>
+          <expression>pi/4</expression>
+          <isTunable>true</isTunable>
+          <name>MaxSteeringAngle</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9a2f91e7-5eb6-43e6-8bf1-056e665bcbb1">
+          <evaluate>true</evaluate>
+          <expression>[0; 0; 0]</expression>
+          <isTunable>true</isTunable>
+          <name>InitialState</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="fdbbb533-91ba-4128-9bf0-908598cd90fa">
+          <expression>Interpreted execution</expression>
+          <name>SimulateUsing</name>
+        </dialogParameters>
+        <initializationCode>robotics.slmobile.internal.mask.MaskValidation.validateBicycleParameters(...
+    WheelBase, VehicleSpeedRange, MaxSteeringAngle, InitialState);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="55fddda4-899e-45d2-8cf7-c4a10f3c47dc">
+      <blockPath>Pur_Pursuit/Bicycle Kinematic Model/MATLAB System</blockPath>
+      <id>Pur_Pursuit:64:95</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="572d0300-9c74-4a1e-ae75-db2e1b4659c9">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="63fcdc1b-812e-4002-b36b-467699e1c6c9">
+          <evaluate>true</evaluate>
+          <expression>WheelBase</expression>
+          <isTunable>true</isTunable>
+          <name>WheelBase</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="65215a69-1078-41fa-9e67-257eed9af3f4">
+            <name>WheelBase</name>
+            <value></value>
+            <workspace>Pur_Pursuit:64</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5d4d528d-41d8-494e-8715-3b2f501c95d4">
+          <evaluate>true</evaluate>
+          <expression>VehicleSpeedRange</expression>
+          <isTunable>true</isTunable>
+          <name>VehicleSpeedRange</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="ab348fa7-1794-48f0-b1cc-8fcbbf328cc4">
+            <name>VehicleSpeedRange</name>
+            <value></value>
+            <workspace>Pur_Pursuit:64</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0a0af7c9-1d58-4981-b7cc-65dab0bd3073">
+          <evaluate>true</evaluate>
+          <expression>MaxSteeringAngle</expression>
+          <isTunable>true</isTunable>
+          <name>MaxSteeringAngle</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="0c359a2d-5cab-4a4b-852d-9047e38b6141">
+            <name>MaxSteeringAngle</name>
+            <value></value>
+            <workspace>Pur_Pursuit:64</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0bd5c6ac-ec34-4e5e-bcd6-dc6b9040e4ae">
+          <expression>Vehicle Speed &amp; Steering Angle</expression>
+          <name>VehicleInputsStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ec62b99b-cec8-45ac-9b89-82fd3e1daad9">
+          <expression>Interpreted execution</expression>
+          <name>SimulateUsing</name>
+        </dialogParameters>
+        <initializationCode>matlab.system.MLSysBlockIconAndPortLabelsInfo.updateMLSysBlockIconAndPortLabels(gcbh)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>Pur_Pursuit:64</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="c7663ff1-202a-4ae4-921d-66400f730f9d">
+      <blockPath>Pur_Pursuit/Mapped Steering</blockPath>
+      <childrenIds>Pur_Pursuit:66:350</childrenIds>
+      <id>Pur_Pursuit:66</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="8feca1fe-449c-43bd-9c91-09af77a836d2">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a6c5a1d5-fe35-4772-a461-54a3805f65b4">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <isTunable>true</isTunable>
+          <name>SpdDpd</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8955efc0-9c9c-45e2-9f0e-64d2f475fe24">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <isTunable>true</isTunable>
+          <name>IndexType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="fed7b4db-3a2f-412f-979e-4b933c96f335">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <isTunable>true</isTunable>
+          <name>GrType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b641686c-e913-43ed-9d3c-a37f1e7908e6">
+          <evaluate>true</evaluate>
+          <expression>[-1.5*pi -0.72*pi -0.17*pi 0.17*pi 0.72*pi 1.5*pi]</expression>
+          <isTunable>true</isTunable>
+          <name>StrgAngBpts</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9b1c81f9-f9a0-40f1-ae57-4c45c68ef002">
+          <evaluate>true</evaluate>
+          <expression>[-40 -19.2 -4.53 4.53 19.2 40]</expression>
+          <isTunable>true</isTunable>
+          <name>RackDispBpts</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="66f810bd-3e2c-4bb2-9071-ddd62c0d4b2b">
+          <evaluate>true</evaluate>
+          <expression>8.28*2*pi</expression>
+          <isTunable>true</isTunable>
+          <name>Gr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ec168b23-ea22-40cc-b2a4-9d503fc16113">
+          <evaluate>true</evaluate>
+          <expression>[9.87 9.87 7.16 7.16 9.87 9.87]*2*pi</expression>
+          <isTunable>true</isTunable>
+          <name>GrTbl</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a66d30d2-6434-40f0-a391-55144b7b44d8">
+          <evaluate>true</evaluate>
+          <expression>[-1.5*pi -0.72*pi -0.17*pi 0.17*pi 0.72*pi 1.5*pi]/13.5 </expression>
+          <isTunable>true</isTunable>
+          <name>WhlLftTbl</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="45d9875a-6280-4d24-9a69-302b45ad0bdb">
+          <evaluate>true</evaluate>
+          <expression>[-1.5*pi -0.72*pi -0.17*pi 0.17*pi 0.72*pi 1.5*pi]/13.5</expression>
+          <isTunable>true</isTunable>
+          <name>WhlRghtTbl</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bdf3661b-a3a6-435b-9d8b-4dfca904eeff">
+          <evaluate>true</evaluate>
+          <expression>[-1 1]</expression>
+          <isTunable>true</isTunable>
+          <name>VehSpdBpts</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="220181dd-56d9-49b3-89d2-3bd58c1d9810">
+          <evaluate>true</evaluate>
+          <expression>[1 1]</expression>
+          <isTunable>true</isTunable>
+          <name>SpdFctTbl</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="aac8aa83-e349-4de6-965e-d3ecfe38139f">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <name>aMode</name>
+        </dialogParameters>
+        <initializationCode> vehdynicon(&apos;vehdynlibsteeringmapped&apos;,gcb,&apos;Main&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="356b44ec-1ad3-470c-9942-f1ce7ba38963">
+      <blockPath>Pur_Pursuit/Mapped Steering/LookupGain</blockPath>
+      <id>Pur_Pursuit:66:350</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="667b9c96-9604-41fd-a1b5-6f6ffe6b5425">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="13b46022-9d35-423c-bd14-38c8bc378d06">
+          <evaluate>true</evaluate>
+          <expression>SpdFctTbl</expression>
+          <isTunable>true</isTunable>
+          <name>tbl</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="953dbb69-59ab-4710-8a8d-195d0226e6fc">
+            <name>SpdFctTbl</name>
+            <value></value>
+            <workspace>Pur_Pursuit:66</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1ecd4980-3559-44e4-bcb2-393c5f0161b6">
+          <evaluate>true</evaluate>
+          <expression>VehSpdBpts</expression>
+          <isTunable>true</isTunable>
+          <name>bpts</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="5724211b-9b47-446a-90fc-a6bfa521706a">
+            <name>VehSpdBpts</name>
+            <value></value>
+            <workspace>Pur_Pursuit:66</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>Pur_Pursuit:66</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="fa2f69fd-d538-4171-8b0f-58276441f000">
+      <blockPath>Pur_Pursuit/Kinematic Steering</blockPath>
+      <childrenIds>Pur_Pursuit:67:179</childrenIds>
+      <id>Pur_Pursuit:67</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="572941d0-1926-4911-abfd-e714e4e4e0ff">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="353c2738-8b4f-43d7-b7dd-96d76cd49608">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <name>StrgType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0aee37bb-89de-4e23-8349-bf8df9749fe7">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>StrgRatioType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f3270708-dc48-4a43-acf5-6a79ea298ff6">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>Loc</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e7c89380-6b07-4760-8146-e8a6670a1b71">
+          <evaluate>true</evaluate>
+          <expression>0.01</expression>
+          <isTunable>true</isTunable>
+          <name>NrmlFctr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3cf0e18b-886d-40ac-b988-32751331df1e">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <isTunable>true</isTunable>
+          <name>TrckWdth</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="23ea3ca5-e013-404a-aa6f-31facbe5bd41">
+          <evaluate>true</evaluate>
+          <expression>1.524</expression>
+          <isTunable>true</isTunable>
+          <name>WhlBase</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3ebaa086-f5bc-46ca-8ae7-fb7edd4d4a78">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>Db</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="392c4330-f1fc-4500-b62e-66c1d5f43d74">
+          <evaluate>true</evaluate>
+          <expression>1.25*pi</expression>
+          <isTunable>true</isTunable>
+          <name>StrgRng</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="fca0e70d-6cd5-4f07-a201-dfc99ebfc1a1">
+          <evaluate>true</evaluate>
+          <expression>[-6.2832   -5.0265   -3.7699   -2.5133   -1.2566         0    1.2566    2.5133    3.7699    5.0265    6.2832]</expression>
+          <isTunable>true</isTunable>
+          <name>StrgAngBpts</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8d6e78e1-d74c-4eea-bb28-c64f42ca8ba8">
+          <evaluate>true</evaluate>
+          <expression>[13.5000   13.3750   13.2500   13.1250   13.0000   13.0000   13.0000   13.1250   13.2500   13.3750   13.5000
+]</expression>
+          <isTunable>true</isTunable>
+          <name>StrgRatioTbl</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d3ae613f-a961-4798-bb2b-3837382e379e">
+          <evaluate>true</evaluate>
+          <expression>100</expression>
+          <isTunable>true</isTunable>
+          <name>StrgRatio</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bb7254f5-a85d-4985-ace2-34377b828ba3">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>PctAckIn</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e33adb5f-297c-4676-af98-19d142c69318">
+          <evaluate>true</evaluate>
+          <expression>100</expression>
+          <isTunable>true</isTunable>
+          <name>PctAck</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3b5b7ac5-7ed4-470b-b3a2-b028cc01d38b">
+          <evaluate>true</evaluate>
+          <expression>ones(1,11)*100</expression>
+          <isTunable>true</isTunable>
+          <name>PctAckTbl</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d46646ae-83d6-4ee3-b5dd-39ce0df2f2af">
+          <evaluate>true</evaluate>
+          <expression>0.1</expression>
+          <isTunable>true</isTunable>
+          <name>StrgArmLngth</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="cc612fbc-65b4-4ee5-a450-49b3d294af43">
+          <evaluate>true</evaluate>
+          <expression>0.5</expression>
+          <isTunable>true</isTunable>
+          <name>RckCsLngth</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ad3668f9-01d1-4c4f-9e6e-ef71796eb9fd">
+          <evaluate>true</evaluate>
+          <expression>0.248</expression>
+          <isTunable>true</isTunable>
+          <name>TieRodLngth</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="daf454ac-9252-4093-a1a0-e8155e365f7b">
+          <evaluate>true</evaluate>
+          <expression>0.2</expression>
+          <isTunable>true</isTunable>
+          <name>D</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7b6d6354-defd-44b8-a716-9b35d2aa6e9b">
+          <evaluate>true</evaluate>
+          <expression>0.00085818</expression>
+          <isTunable>true</isTunable>
+          <name>PnnRadius</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f30274ff-bf02-41c8-8835-47a21eac999e">
+          <evaluate>true</evaluate>
+          <expression>[0.0055    0.0055    0.0056    0.0057    0.0058    0.0057    0.0057    0.0057    0.0056    0.0055    0.0055]</expression>
+          <isTunable>true</isTunable>
+          <name>PnnRadiusTbl</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ad997f62-be61-4623-9ef8-9507ca5d79c9">
+          <evaluate>true</evaluate>
+          <expression>0.1</expression>
+          <isTunable>true</isTunable>
+          <name>RodLngth</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="31ae7b60-b1fc-4076-b255-9c85d0d3c06d">
+          <evaluate>true</evaluate>
+          <expression>0.9</expression>
+          <isTunable>true</isTunable>
+          <name>ParaArmLngth</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="434db234-4539-4362-9401-c0f68777a243">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <name>aMode</name>
+        </dialogParameters>
+        <initializationCode>[~] = vehdynicon(&apos;vehdynkinematicsteering&apos;,gcb,&apos;Main&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="c90648ea-ca3a-4ec6-a900-07d5093d3645">
+      <blockPath>Pur_Pursuit/Kinematic Steering/AngInput</blockPath>
+      <childrenIds>Pur_Pursuit:67:179:244</childrenIds>
+      <id>Pur_Pursuit:67:179</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="a4609fd1-07c7-4429-87bd-670e661a176b">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="711b4270-1004-4723-b2c4-cc30baf58d79">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <isTunable>true</isTunable>
+          <name>StrgType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ecb4dafa-8f65-4009-8287-80161a612576">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <isTunable>true</isTunable>
+          <name>StrgRatioType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="fe55db82-7dd0-4ac8-ab35-1286b7fb87d2">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>PctAckIn</name>
+        </dialogParameters>
+        <initializationCode>vehdynicon(&apos;vehdynkinematicsteering&apos;,gcb,&apos;Init&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>Pur_Pursuit:67</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="989a3f5f-a9e3-4cda-9895-f89f8409860a">
+      <blockPath>Pur_Pursuit/Kinematic Steering/AngInput/RackandPinConstantRatio</blockPath>
+      <childrenIds>Pur_Pursuit:67:179:244:98</childrenIds>
+      <id>Pur_Pursuit:67:179:244</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="bcedd552-7ac5-45b5-8b46-c87cc78673fa">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="52e9f760-288f-48b1-be97-06b7807836f3">
+          <evaluate>true</evaluate>
+          <expression>TrckWdth</expression>
+          <isTunable>true</isTunable>
+          <name>Tr</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="9c301550-94af-49f4-865b-7adfe6df0ff7">
+            <name>TrckWdth</name>
+            <value></value>
+            <workspace>Pur_Pursuit:67</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ff3aebc1-fe2a-4949-937e-edad1dee73c9">
+          <evaluate>true</evaluate>
+          <expression>PnnRadius</expression>
+          <isTunable>true</isTunable>
+          <name>R</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="5db4213f-bd77-4ca1-a13c-2f6f3ee917fe">
+            <name>PnnRadius</name>
+            <value></value>
+            <workspace>Pur_Pursuit:67</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0d15f694-7aa0-42b3-b9ea-5261c8b398bb">
+          <evaluate>true</evaluate>
+          <expression>D</expression>
+          <isTunable>true</isTunable>
+          <name>d</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="62e00ba7-55a4-487e-ba59-ee7b1ac18cd0">
+            <name>D</name>
+            <value></value>
+            <workspace>Pur_Pursuit:67</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7c01b87b-421d-4988-a2f0-acb9664f0ac4">
+          <evaluate>true</evaluate>
+          <expression>RckCsLngth</expression>
+          <isTunable>true</isTunable>
+          <name>lRack</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="5bd845a1-e216-4d6a-9043-8f08e04e905b">
+            <name>RckCsLngth</name>
+            <value></value>
+            <workspace>Pur_Pursuit:67</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="71219a3f-8484-4704-b859-7c105f9244ba">
+          <evaluate>true</evaluate>
+          <expression>StrgArmLngth</expression>
+          <isTunable>true</isTunable>
+          <name>larm</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="ca2aab00-3a05-438f-91d3-155ea7a8ab4a">
+            <name>StrgArmLngth</name>
+            <value></value>
+            <workspace>Pur_Pursuit:67</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d8e95454-748d-4926-aac2-f18c24fcdd5c">
+          <evaluate>true</evaluate>
+          <expression>TieRodLngth</expression>
+          <isTunable>true</isTunable>
+          <name>lrod</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="ea5c2be9-bfb4-4190-ad66-a1210416e9ce">
+            <name>TieRodLngth</name>
+            <value></value>
+            <workspace>Pur_Pursuit:67</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>Pur_Pursuit:67:179</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="daac6f48-72e2-4027-ba47-f0a9c3b650f7">
+      <blockPath>Pur_Pursuit/Kinematic Steering/AngInput/RackandPinConstantRatio/Rack and Pinion</blockPath>
+      <id>Pur_Pursuit:67:179:244:98</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="7e6f1036-c5f6-4ab2-9829-425a29f8bced">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="29a9f17a-d550-4e31-9957-67641908d15e">
+          <evaluate>true</evaluate>
+          <expression>Tr</expression>
+          <isTunable>true</isTunable>
+          <name>Tr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="34a8357c-0d1c-42ad-a87a-86b5172794bc">
+          <evaluate>true</evaluate>
+          <expression>d</expression>
+          <isTunable>true</isTunable>
+          <name>d</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3b2e4f03-dfa6-46d5-8c29-1136cae49cfd">
+          <evaluate>true</evaluate>
+          <expression>lRack</expression>
+          <isTunable>true</isTunable>
+          <name>lp</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f20d6b38-a7cb-459e-9130-0c8620bd5f29">
+          <evaluate>true</evaluate>
+          <expression>larm</expression>
+          <isTunable>true</isTunable>
+          <name>larm</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3b5fd9bb-cad2-4897-ac01-7323a20dc14f">
+          <evaluate>true</evaluate>
+          <expression>lrod</expression>
+          <isTunable>true</isTunable>
+          <name>lrod</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="71c75455-3236-489e-9688-0c90d60f2312">
+          <evaluate>true</evaluate>
+          <expression>R</expression>
+          <isTunable>true</isTunable>
+          <name>ratio</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>Pur_Pursuit:67:179:244</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="016163bd-719e-47d5-b3ea-4fefda03a2e4">
+      <childrenIds>Pur_Pursuit:64</childrenIds>
+      <childrenIds>Pur_Pursuit:66</childrenIds>
+      <childrenIds>Pur_Pursuit:67</childrenIds>
+      <id>root</id>
+    </maskedBlocks>
+    <flags type="slsa.mm.maskTree.MaskTreeFlags" uuid="6940d547-3452-4ad9-9198-253adc4809a3"/>
+  </slsa.mm.maskTree.MaskTree>
+</MF0>
