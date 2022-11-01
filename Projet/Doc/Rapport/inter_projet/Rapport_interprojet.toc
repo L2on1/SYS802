@@ -1,0 +1,27 @@
+\babel@toc {french}{}
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Contexte : Formule ÉTS - voiture autonome}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Stratégie driverless}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Schéma global : Path-Tracking $\DOTSB \tmspace +\thickmuskip {.2777em}\DOTSB \Leftarrow \joinrel \Rightarrow \tmspace +\thickmuskip {.2777em}$ Contrôle de la trajectoire}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Présentation du modèle : bicycle model}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Présentation du bicycle model}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Cinématique}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Dynamique}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Méthode de contrôle}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Méthode géométrique : Pure Pursuite}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Méthode black box : PID}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Schéma-bloc}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Aperçu}{8}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Distance entre la voiture et la trajectoire – Problème de \underline {régulation}}{8}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Distance entre la voiture et la trajectoire – Problème d’\underline {asservissement}}{9}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Schéma-bloc : Pure Pursuite}{9}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Temporel}{9}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Discret}{9}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Schéma-bloc : PID}{9}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Temporel}{9}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Discret}{10}{subsubsection.4.3.2}%
+\contentsline {section}{\numberline {5}Matlab}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Simulation du Pure Pursuit sur Simulink}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Simulation du PID sur Simulink}{10}{subsection.5.2}%
+\contentsline {section}{\numberline {6}TO DO}{11}{section.6}%

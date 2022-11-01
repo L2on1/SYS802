@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Contexte : Formule \311TS - voiture autonome}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Strat\351gie driverless}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Sch\351ma global : Path-Tracking -3mu Contr\364le de la trajectoire}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Pr\351sentation du mod\350le : bicycle model}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Pr\351sentation du bicycle model}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Cin\351matique}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Dynamique}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{M\351thode de contr\364le}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{M\351thode g\351om\351trique : Pure Pursuite}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{M\351thode black box : PID}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Sch\351ma-bloc}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Aper\347u}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Distance entre la voiture et la trajectoire \205 Probl\350me de r\351gulation}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Distance entre la voiture et la trajectoire \205 Probl\350me d\220asservissement}{subsection.4.1}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Sch\351ma-bloc : Pure Pursuite}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Temporel}{subsection.4.2}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Discret}{subsection.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.3}{Sch\351ma-bloc : PID}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Temporel}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Discret}{subsection.4.3}% 21
+\BOOKMARK [1][-]{section.5}{Matlab}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Simulation du Pure Pursuit sur Simulink}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.2}{Simulation du PID sur Simulink}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{TO DO}{}% 25
