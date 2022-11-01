@@ -1,0 +1,5 @@
+# ignore mldatx files
+
+*.mldatx*
+*.mldatx
+.mldatx
